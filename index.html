@@ -6,12 +6,299 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travelite</title>
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section id="gallery" class="gallery">
+    <!-- Header section starts -->
+
+    <header>
+
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravelite</span></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search Here...">
+            <label for="search-bar" class="fas fa-search"></label>
+
+        </form>
+
+    </header>
+
+    <!-- header section end -->
+
+    <div class="login-form-container">
+        <li class="fas fa-time" id="form-close"></li>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account?<a href="#">register now</a></p>
+        </form>
+    </div>
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+            <p>dicover new places with us, adventure awaits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="Images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="Images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="Images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="Images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="Images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="Images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+    <!-- home section ends -->
+    <!-- books section starts -->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="Images/1.png" alt="">
+                
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>How many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+
+        </div>
+    </section>
+    <!-- book section ends -->
+
+       <!-- packages section starts -->
+   
+   <section class="packages" id="packages">
+    
+    <h1 class="heading">
+     <span>p</span>
+     <span>a</span>
+     <span>c</span>
+     <span>k</span>
+     <span>a</span>
+     <span>g</span>
+     <span>e</span>
+     <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/gateway-india_78361-4513.avif" alt="">
+            <div class="content">
+               <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3> 
+               <p>Lorem, ipsum.?</p>
+               <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+               </div>
+               <div class="price">Rs 7000.00 <span>Rs 11000.00</span></div>
+               <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/victoria-memorial-kolkata_78361-2667.avif" alt="">
+            <div class="content">
+               <h3><i class="fas fa-map-marker-alt"></i>Kolkata</h3> 
+               <p>Lorem, ipsum.?</p>
+               <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+               </div>
+               <div class="price">Rs 5000.00 <span>Rs 9000.00</span></div>
+               <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/mesmerizing-shot-famous-historic-taj-mahal-agra-india_181624-16028.avif" alt="">
+            <div class="content">
+               <h3><i class="fas fa-map-marker-alt"></i>Agra</h3> 
+               <p>Lorem, ipsum.?</p>
+               <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+               </div>
+               <div class="price">Rs 3000.00 <span>Rs 5000.00</span></div>
+               <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/architecture-color-holy-beautiful-detail_1203-6106 (1).avif" alt="">
+            <div class="content">
+               <h3><i class="fas fa-map-marker-alt"></i>Chennai</h3> 
+               <p>Lorem, ipsum.?</p>
+               <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+               </div>
+               <div class="price">Rs 8000.00 <span>Rs 12000.00</span></div>
+               <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/mehrangarh-fort_1357-12.avif" alt="">
+            <div class="content">
+               <h3><i class="fas fa-map-marker-alt"></i>Rajasthan</h3> 
+               <p>Lorem, ipsum.?</p>
+               <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+               </div>
+               <div class="price">Rs 4000.00 <span>Rs 8000.00</span></div>
+               <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/tourists-taking-photos-beautiful-scenery-skiing-around-deogyusan_335224-426.avif" alt="">
+            <div class="content">
+               <h3><i class="fas fa-map-marker-alt"></i>Kashmir</h3> 
+               <p>Lorem, ipsum.?</p>
+               <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+               </div>
+               <div class="price">Rs 5000.00 <span>Rs 9000.00</span></div>
+               <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+    </div>
+
+   </section>
+
+
+    <!-- packages section ends -->
+
+    <!-- services section starts -->
+
+     <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum obcaecati assumenda eius aperiam, maxime ex vel nisi mollitia unde ipsa.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum obcaecati assumenda eius aperiam, maxime ex vel nisi mollitia unde ipsa.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum obcaecati assumenda eius aperiam, maxime ex vel nisi mollitia unde ipsa.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum obcaecati assumenda eius aperiam, maxime ex vel nisi mollitia unde ipsa.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum obcaecati assumenda eius aperiam, maxime ex vel nisi mollitia unde ipsa.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum obcaecati assumenda eius aperiam, maxime ex vel nisi mollitia unde ipsa.</p>
+            </div>
+
+        </div>
+
+     </section>
+
+    <!-- services section ends -->
+
+      <!-- gallery section stars -->
+
+      <section id="gallery" class="gallery">
         <h1 class="heading">
             <span>G</span>
             <span>A</span>
@@ -140,248 +427,259 @@
                 </div>
             </div>
 
-
-
         </div>
 
     </section>
 
-    <!-- -------------------review Section---------------------- -->
 
-    <section class="review" id="review">
-        <h1 class="heading">
-            <span>R</span>
-            <span>E</span>
-            <span>V</span>
-            <span>I</span>
-            <span>E</span>
-            <span>W</span>
-            <span>S</span>
-        </h1>
+        <!-- gallery section ends -->
 
-        <div class="review-slider">
-            <button class="prev">&#10094</button>
-            <button class="next">&#10095</button>
-            <div class="slider-row">
+         <!-- review section starts -->
 
-                <div class="slide">
-                    <div class="box">
-                        <img src="./assets/testimonial1.jpg" alt="">
-                        <h3>Isha Gole</h3>
-                        <p>
-                            It was a wonderful experience for us. All your arrangements were up to the mark.
-                            All hotels and transportation arrangements were excellent. Though we had faced some problems
-                            with hotel at Kedarnath you handled it swiftly and efficiently. Thanks for your support and
-                            prompt response.
-                        </p>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="box">
-                        <img src="./assets/testimonial2.jpg" alt="">
-                        <h3>Raj Prakash</h3>
-                        <p>
-                            Thank you so much for your help in organising our India trip. We had an absolutely fantastic
-                            time, helped by your companies amazing organisation and all your great staff.
-                            We saw tigers, Hindu festivals, Kanchenjunga, Darjeeling tea plantations and all the sites
-                            of Delhi.
-                        </p>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="box">
-                        <img src="./assets/testimonial3.jpg" alt="">
-                        <h3>Riya Maravi</h3>
-                        <p>
-                            We have just got back from our long holiday around India.
-                            Just wanted to say how much we enjoyed our trip' how we felt so looked after and how well
-                            our driver Uday took us around.
-                        </p>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="box">
-                        <img src="./assets/testimonial4.jpg" alt="">
-                        <h3>Dharmendra Negi</h3>
-                        <p>
-                            I would like to thank you for your service, our journey through India has been an amazing
-                            experience
-                            Hope to come back soon, have a nice day
-                        </p>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="box">
-                        <img src="./assets/testimonial5.jpg" alt="">
-                        <h3>Madhu</h3>
-                        <p>
-                            This package was a gift, I'm seriously impressed with the guidance that they provided throughout the trip ! Had a great trip!
-                        </p>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="box">
-                        <img src="./assets/testimonial6.jpg" alt="">
-                        <h3>Bhuvan Bam</h3>
-                        <p>
-                            It's was really nice, the guide was really cooperative, and helping others too.i must prefer this site.It was my third time booking for the same site.
-                        </p>
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- -------------------contact section------------------ -->
-
-    <section class="contact" id="contact">
-        <h1 class="heading">
-            <span>C</span>
-            <span>O</span>
-            <span>N</span>
-            <span>T</span>
-            <span>A</span>
-            <span>C</span>
-            <span>T</span>
-        </h1>
-
-        <div class="row">
-
-            <div class="image">
-                <img src="./assets/contact.jpg" alt="contact">
-
-            </div>
-
-            <form action="">
-                <div class="inputBox">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="inputBox">
-                    <input type="number" placeholder="Mobile">
-                    <input type="text" placeholder="Subject">
-                </div>
-
-                <textarea placeholder="Message" name="" id=""></textarea>
-                <input type="submit" class="btn" value="Send Message">
-
-            </form>
-
-        </div>
-
-    </section>
-
-    <!-- -----------------brand section------------- -->
-
-    <section class="brand-container">
-
-        <div class="brandRow">
-            <div class="brand-slide" id="last-slide"><img class="brands" src="./assets/brand7.png"></div>
-            <div class="brand-slide"><img class="brands" src="./assets/brand1.png"></div>
-            <div class="brand-slide"><img class="brands" src="./assets/brand2.png"></div>
-            <div class="brand-slide"><img class="brands" src="./assets/brand3.png"></div>
-            <div class="brand-slide"><img class="brands" src="./assets/brand4.png"></div>
-            <div class="brand-slide"><img class="brands" src="./assets/brand5.png"></div>
-            <div class="brand-slide"><img class="brands" src="./assets/brand6.png"></div>
-            <div class="brand-slide"><img class="brands" src="./assets/brand7.png"></div>
-            <div class="brand-slide" id="first-slide"><img class="brands" src="./assets/brand1.png"></div>
-        </div>
-        </div>
-    </section>
+         <section class="review" id="review">
+            <h1 class="heading">
+                <span>R</span>
+                <span>E</span>
+                <span>V</span>
+                <span>I</span>
+                <span>E</span>
+                <span>W</span>
+                <span>S</span>
+            </h1>
     
-    <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>About us</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum magni quod!
-                    
-                </p>
+            <div class="review-slider">
+                <button class="prev">&#10094</button>
+                <button class="next">&#10095</button>
+                <div class="slider-row">
+    
+                    <div class="slide">
+                        <div class="box">
+                            <img src="./assets/testimonial1.jpg" alt="">
+                            <h3>Isha Gole</h3>
+                            <p>
+                                It was a wonderful experience for us. All your arrangements were up to the mark.
+                                All hotels and transportation arrangements were excellent. Though we had faced some problems
+                                with hotel at Kedarnath you handled it swiftly and efficiently. Thanks for your support and
+                                prompt response.
+                            </p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="slide">
+                        <div class="box">
+                            <img src="./assets/testimonial2.jpg" alt="">
+                            <h3>Raj Prakash</h3>
+                            <p>
+                                Thank you so much for your help in organising our India trip. We had an absolutely fantastic
+                                time, helped by your companies amazing organisation and all your great staff.
+                                We saw tigers, Hindu festivals, Kanchenjunga, Darjeeling tea plantations and all the sites
+                                of Delhi.
+                            </p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="box">
+                            <img src="./assets/testimonial3.jpg" alt="">
+                            <h3>Riya Maravi</h3>
+                            <p>
+                                We have just got back from our long holiday around India.
+                                Just wanted to say how much we enjoyed our trip' how we felt so looked after and how well
+                                our driver Uday took us around.
+                            </p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="box">
+                            <img src="./assets/testimonial4.jpg" alt="">
+                            <h3>Dharmendra Negi</h3>
+                            <p>
+                                I would like to thank you for your service, our journey through India has been an amazing
+                                experience
+                                Hope to come back soon, have a nice day
+                            </p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="box">
+                            <img src="./assets/testimonial5.jpg" alt="">
+                            <h3>Madhu</h3>
+                            <p>
+                                This package was a gift, I'm seriously impressed with the guidance that they provided throughout the trip ! Had a great trip!
+                            </p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="box">
+                            <img src="./assets/testimonial6.jpg" alt="">
+                            <h3>Bhuvan Bam</h3>
+                            <p>
+                                It's was really nice, the guide was really cooperative, and helping others too.i must prefer this site.It was my third time booking for the same site.
+                            </p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
             </div>
-            <div class="box">
-                <h3>Branch Loctions</h3>
-                <a href="#">Delhi</a>
-                <a href="#">Bangalore</a>
-                <a href="#">Mumbai</a>
-                <a href="#">Indore</a>
-                <a href="#">Pune</a>
-            </div>
-            <div class="box">
-                <h3>Quick Links</h3>
-                <a href="#">Home</a>
-                <a href="#">Book</a>
-                <a href="#">Packages</a>
-                <a href="#">Services</a>
-                <a href="#">Gallery</a>
-                <a href="#">Review</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="box">
-                <h3>Follow us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">Linkedin</a>
-            </div>
+        </section>
 
-        </div>
+          <!-- review section ends -->
 
-        <h1 class="credit"><span>Travelite </span>| All rights reserved!</h1>
-    </section>
+           <!-- contact section starts -->
 
-    <script src="./script.js"></script>
+           <section class="contact" id="contact">
+            <h1 class="heading">
+                <span>C</span>
+                <span>O</span>
+                <span>N</span>
+                <span>T</span>
+                <span>A</span>
+                <span>C</span>
+                <span>T</span>
+            </h1>
+    
+            <div class="row">
+    
+                <div class="image">
+                    <img src="./assets/contact.jpg" alt="contact">
+    
+                </div>
+    
+                <form action="">
+                    <div class="inputBox">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" placeholder="Mobile">
+                        <input type="text" placeholder="Subject">
+                    </div>
+    
+                    <textarea placeholder="Message" name="" id=""></textarea>
+                    <input type="submit" class="btn" value="Send Message">
+    
+                </form>
+    
+            </div>
+    
+        </section>
+
+            <!-- contact section ends -->
+
+              <!-- brand section starts -->
+
+              <section class="brand-container">
+
+                <div class="brandRow">
+                    <div class="brand-slide" id="last-slide"><img class="brands" src="./assets/brand7.png"></div>
+                    <div class="brand-slide"><img class="brands" src="./assets/brand1.png"></div>
+                    <div class="brand-slide"><img class="brands" src="./assets/brand2.png"></div>
+                    <div class="brand-slide"><img class="brands" src="./assets/brand3.png"></div>
+                    <div class="brand-slide"><img class="brands" src="./assets/brand4.png"></div>
+                    <div class="brand-slide"><img class="brands" src="./assets/brand5.png"></div>
+                    <div class="brand-slide"><img class="brands" src="./assets/brand6.png"></div>
+                    <div class="brand-slide"><img class="brands" src="./assets/brand7.png"></div>
+                    <div class="brand-slide" id="first-slide"><img class="brands" src="./assets/brand1.png"></div>
+                </div>
+                </div>
+            </section>
+            
+            <section class="footer">
+                <div class="box-container">
+                    <div class="box">
+                        <h3>About us</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum magni quod!
+                            
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3>Branch Loctions</h3>
+                        <a href="#">Delhi</a>
+                        <a href="#">Bangalore</a>
+                        <a href="#">Mumbai</a>
+                        <a href="#">Indore</a>
+                        <a href="#">Pune</a>
+                    </div>
+                    <div class="box">
+                        <h3>Quick Links</h3>
+                        <a href="#">Home</a>
+                        <a href="#">Book</a>
+                        <a href="#">Packages</a>
+                        <a href="#">Services</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Review</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="box">
+                        <h3>Follow us</h3>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Linkedin</a>
+                    </div>
+        
+                </div>
+        
+                <h1 class="credit"><span>Travelite </span>| All rights reserved!</h1>
+            </section>
+
+                <!-- brand section ends -->
+    
+    
+
+
+    <script src="App.js"></script>
+
 </body>
 
 </html>
