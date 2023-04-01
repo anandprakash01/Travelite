@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 .btn{
     display: inline-block;
@@ -101,10 +102,15 @@ section{
     left: 0;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: rgba(0,0,0,.7);
     padding: 2rem;
     padding-top: 5rem;
+    transition: 0.5s;
 
 }
 .gallery .box-container .box:hover .content{
@@ -185,10 +191,7 @@ button.next:hover , button.prev:hover{
 }
 
 .review .dots{
-    position: relative;
-    left: 46%;
-    /* transform: translateX(-50%); */
-    z-index: 4;
+    text-align: center;
 }
 .dots .dot{
     height: 1rem;
