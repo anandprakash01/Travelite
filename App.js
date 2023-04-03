@@ -14,7 +14,6 @@ window.onscroll = () =>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
     loginForm.classList.remove('active');
-
 }
 
 
@@ -43,6 +42,7 @@ videoBtn.forEach(btn =>{
 
 });
 
+
 const slideRow = document.querySelector('.slider-row');
 const prevBtn=document.querySelector(".prev");
 const nextBtn=document.querySelector(".next");
@@ -61,8 +61,15 @@ lastClone.id = 'last-clone';
 slideRow.append(firstClone);
 slideRow.prepend(lastClone);
 
-const slideWidth=slides[index].clientWidth;
+let slideWidth;
 // const slideWidth=slides[index].offsetWidth;
+
+function getSlideWidth(){
+    slideWidth=slides[index].clientWidth;
+}
+getSlideWidth();
+window.addEventListener("resize",getSlideWidth);
+
 
 slideRow.style.transform=`translateX(${-slideWidth*index}px)`;
 

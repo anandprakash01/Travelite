@@ -27,7 +27,6 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
-
 }
 
 section {
@@ -85,7 +84,6 @@ header .logo {
     font-weight: bolder;
     color: #fff;
     text-transform: uppercase;
-
 }
 
 header .logo span {
